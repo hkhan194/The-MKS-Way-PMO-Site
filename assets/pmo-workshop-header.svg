@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 520" role="img" aria-label="Project team planning workshop">
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1">
+      <stop offset="0" stop-color="#1e2d35"/>
+      <stop offset="0.52" stop-color="#172229"/>
+      <stop offset="1" stop-color="#263843"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" x2="1">
+      <stop offset="0" stop-color="#c7935e"/>
+      <stop offset="1" stop-color="#e0b477"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="1400" height="520" fill="url(#wall)"/>
+  <g opacity=".38">
+    <rect x="54" y="40" width="345" height="320" fill="none" stroke="#41535e" stroke-width="7"/>
+    <rect x="424" y="40" width="345" height="320" fill="none" stroke="#41535e" stroke-width="7"/>
+    <rect x="794" y="40" width="345" height="320" fill="none" stroke="#41535e" stroke-width="7"/>
+    <rect x="1164" y="40" width="190" height="320" fill="none" stroke="#41535e" stroke-width="7"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <g transform="translate(88 55)">
+      <rect width="42" height="34" rx="2" fill="#3fc5e8"/><rect x="50" width="42" height="34" rx="2" fill="#f4d44d"/><rect x="100" width="42" height="34" rx="2" fill="#f57f52"/>
+      <rect y="45" width="42" height="34" rx="2" fill="#f7a6c7"/><rect x="50" y="45" width="42" height="34" rx="2" fill="#3fc5e8"/><rect x="100" y="45" width="42" height="34" rx="2" fill="#d8e77b"/>
+      <rect y="90" width="42" height="34" rx="2" fill="#f57f52"/><rect x="50" y="90" width="42" height="34" rx="2" fill="#3fc5e8"/>
+    </g>
+    <g transform="translate(470 70)">
+      <rect width="42" height="34" rx="2" fill="#3fc5e8"/><rect x="50" width="42" height="34" rx="2" fill="#3fc5e8"/><rect x="100" width="42" height="34" rx="2" fill="#f4d44d"/>
+      <rect y="45" width="42" height="34" rx="2" fill="#d8e77b"/><rect x="50" y="45" width="42" height="34" rx="2" fill="#f7a6c7"/><rect x="100" y="45" width="42" height="34" rx="2" fill="#f57f52"/>
+    </g>
+    <g transform="translate(930 58)">
+      <rect width="42" height="34" rx="2" fill="#d8e77b"/><rect x="50" width="42" height="34" rx="2" fill="#3fc5e8"/><rect x="100" width="42" height="34" rx="2" fill="#f57f52"/>
+      <rect y="45" width="42" height="34" rx="2" fill="#3fc5e8"/><rect x="50" y="45" width="42" height="34" rx="2" fill="#f4d44d"/>
+    </g>
+  </g>
+  <rect y="372" width="1400" height="148" fill="url(#desk)"/>
+  <ellipse cx="210" cy="363" rx="98" ry="116" fill="#f2bd87"/>
+  <rect x="150" y="350" width="130" height="165" rx="36" fill="#eac05d"/>
+  <circle cx="210" cy="302" r="43" fill="#e9b37d"/>
+  <path d="M172 285c20-38 77-34 92 7-28-12-58-12-92-7z" fill="#15191c"/>
+  <rect x="82" y="420" width="210" height="72" rx="6" fill="#dce2e5"/>
+  <rect x="620" y="144" width="110" height="205" rx="34" fill="#e5b58e"/>
+  <circle cx="675" cy="108" r="38" fill="#d7a176"/>
+  <path d="M635 94c22-41 82-37 96 7-30-12-61-12-96-7z" fill="#c7a35e"/>
+  <rect x="585" y="165" width="132" height="210" rx="14" fill="#f5f7f8"/>
+  <rect x="718" y="190" width="85" height="10" rx="5" fill="#dce2e5"/>
+  <rect x="450" y="310" width="145" height="185" rx="35" fill="#e8d9cf"/>
+  <circle cx="521" cy="259" r="42" fill="#ddb08f"/>
+  <path d="M482 248c13-50 86-49 103-7-36-9-70-9-103 7z" fill="#9d5f31"/>
+  <rect x="508" y="355" width="180" height="105" rx="7" fill="#f6f1d8" transform="rotate(9 598 407)"/>
+  <rect x="1045" y="345" width="180" height="120" rx="34" fill="#ece8dd"/>
+  <circle cx="1138" cy="292" r="42" fill="#d2a27f"/>
+  <path d="M1100 280c18-44 82-41 99 3-35-11-68-11-99-3z" fill="#1b2228"/>
+  <rect x="1112" y="380" width="142" height="82" rx="5" fill="#f3d08a" transform="rotate(-10 1183 421)"/>
+  <rect x="1150" y="392" width="56" height="7" fill="#d2470d"/>
+  <circle cx="1158" cy="414" r="18" fill="#d2470d" opacity=".8"/>
+  <circle cx="1202" cy="421" r="18" fill="#0099c8" opacity=".8"/>
+  <rect x="0" y="0" width="1400" height="520" fill="#000" opacity=".12"/>
+</svg>
