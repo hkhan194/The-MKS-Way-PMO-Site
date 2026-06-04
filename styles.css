@@ -234,6 +234,66 @@ article p:last-child { margin-bottom: 0; }
 .step-strip strong { display: block; margin-bottom: 4px; color: var(--orange-dark); }
 .workflow-layout { display: grid; gap: 18px; }
 .workflow-image { display: block; width: 100%; border: 1px solid var(--line); border-radius: 4px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.sponsor-flow { display: grid; gap: 12px; align-items: stretch; margin-top: 6px; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.sponsor-flow-step { padding: 16px; border-top: 4px solid var(--orange); background: #fcfaf8; }
+.sponsor-flow-step strong { display: block; margin-bottom: 8px; color: var(--orange-dark); }
+.sponsor-flow-step p { margin-bottom: 0; }
+.mini-check-list { display: grid; gap: 8px; margin: 0; padding-left: 18px; }
+.journey-strip {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  align-items: stretch;
+  margin-top: 6px;
+}
+.journey-strip::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 24px;
+  right: 24px;
+  height: 2px;
+  background: #f1c6b5;
+  z-index: 0;
+}
+.journey-strip-three { grid-template-columns: .9fr 1.4fr .9fr; }
+.journey-strip-five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.journey-card {
+  position: relative;
+  z-index: 1;
+  padding: 20px 16px 16px;
+  border-top: 4px solid var(--orange);
+  background: #fcfaf8;
+}
+.journey-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--orange-dark);
+}
+.journey-card p { margin-bottom: 0; }
+.journey-card-wide {
+  border-left: 4px solid var(--orange);
+  border-top-width: 1px;
+  background: #f8f8f8;
+}
+.journey-number {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: var(--white);
+  font-size: .9rem;
+  font-weight: 800;
+  box-shadow: 0 0 0 4px #fff4ec;
+}
+.decision-row { display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 12px; }
+.decision-box { padding: 16px; border: 1px solid var(--line); background: #fff; }
+.decision-box strong { display: block; margin-bottom: 8px; color: var(--orange-dark); }
+.decision-yes { border-left: 4px solid var(--orange); background: #fff4ec; }
+.decision-no { border-left: 4px solid #b3b0ad; background: #f8f8f8; }
 .info-table td strong { color: var(--orange-dark); }
 .note-band { margin-top: 12px; padding: 12px 14px; border-left: 4px solid var(--orange); background: #fff5ef; }
 .doc-link-row { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -297,9 +357,11 @@ article p:last-child { margin-bottom: 0; }
   .tenant-actions { display: none; }
   .content-layout { grid-template-columns: 1fr; }
   .right-panel { min-height: 0; }
-  .cards, .three-col, .four-col, .template-grid, .feature-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .gateway-meeting-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .escalation-flow, .sme-own-grid, .sme-example-grid, .help-block-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cards, .three-col, .four-col, .template-grid, .feature-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .gateway-meeting-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .escalation-flow, .sme-own-grid, .sme-example-grid, .help-block-grid, .decision-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stage-track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .lifecycle-files, .sponsor-grid, .charter-grid, .pm-files, .team-files, .pmo-files { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lifecycle-files, .sponsor-grid, .charter-grid, .pm-files, .team-files, .pmo-files, .sponsor-flow, .journey-strip-five { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .journey-strip-three { grid-template-columns: 1fr; }
+  .journey-strip::before { display: none; }
   .intro-split { grid-template-columns: 1fr; }
   .workflow-grid { grid-template-columns: 1fr; }
 }
@@ -311,7 +373,8 @@ article p:last-child { margin-bottom: 0; }
   .left-nav { border-right: 0; border-bottom: 1px solid var(--line); }
   .page-hero { min-height: 180px; padding: 40px 22px 24px; }
   .main-content { padding: 26px 22px 40px; }
-  .cards, .two-col, .three-col, .four-col, .template-grid, .journey, .feature-grid, .right-panel-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .stage-track, .gateway-meeting-grid, .lifecycle-files, .sponsor-grid, .charter-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .escalation-flow, .pm-files, .sme-own-grid, .sme-example-grid, .team-files, .pmo-files, .help-block-grid { grid-template-columns: 1fr; }
+  .cards, .two-col, .three-col, .four-col, .template-grid, .journey, .feature-grid, .right-panel-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .stage-track, .gateway-meeting-grid, .lifecycle-files, .sponsor-grid, .charter-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .escalation-flow, .pm-files, .sme-own-grid, .sme-example-grid, .team-files, .pmo-files, .help-block-grid, .decision-row, .sponsor-flow, .journey-strip-three, .journey-strip-five { grid-template-columns: 1fr; }
   .journey span::after { content: ""; }
   .right-panel-grid.is-five .panel-link:last-child { grid-column: auto; min-height: 96px; }
+  .journey-strip::before { display: none; }
 }
