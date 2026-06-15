@@ -203,6 +203,8 @@ article p:last-child { margin-bottom: 0; }
 .contact-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
 .contact-actions a { display: inline-flex; min-height: 40px; align-items: center; padding: 9px 14px; border-radius: 4px; background: var(--orange); color: var(--white); font-weight: 700; text-decoration: none; }
 .contact-actions a.secondary { background: var(--white); color: var(--orange-dark); border: 1px solid var(--line); }
+.compact-actions { margin-top: 12px; }
+.compact-actions a { min-height: 36px; padding: 7px 12px; }
 .workflow-grid { display: grid; gap: 16px; grid-template-columns: 1.2fr .8fr; }
 .workflow-card { padding: 18px; background: #f8f8f8; border-left: 5px solid var(--orange); }
 .decision-tree { display: grid; gap: 14px; }
@@ -300,6 +302,7 @@ article p:last-child { margin-bottom: 0; }
 .doc-link-box { padding: 14px 16px; border: 1px solid var(--line); background: #fff; }
 .doc-link-box a { display: inline-block; margin-bottom: 6px; color: var(--orange-dark); font-weight: 700; text-decoration: none; }
 .doc-link-box p { margin-bottom: 0; color: var(--muted); }
+.simple-table-wrap { overflow-x: auto; }
 .key-info-grid { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .key-info-box { padding: 15px 16px; border-top: 3px solid var(--orange); background: #f8f8f8; }
 .key-info-box strong { display: block; margin-bottom: 4px; color: var(--orange-dark); }
@@ -334,9 +337,11 @@ article p:last-child { margin-bottom: 0; }
 .pm-action-card strong { color: var(--orange-dark); font-size: 1.02rem; }
 .role-intro, .section-lead { margin-bottom: 14px; font-size: 1rem; }
 .pm-role-grid { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pm-role-grid-five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .pm-role-item { border-left: 4px solid var(--orange); background: #f8f8f8; }
 .pm-role-item strong { display: block; margin-bottom: 8px; color: var(--orange-dark); }
 .escalation-flow { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 12px; }
+.escalation-flow-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .escalation-step { border-top: 4px solid var(--orange); background: rgba(255,255,255,.82); }
 .escalation-step strong { display: block; margin-bottom: 8px; color: var(--orange-dark); }
 .pm-files { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -351,13 +356,18 @@ article p:last-child { margin-bottom: 0; }
 .help-block-grid { display: grid; gap: 12px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .help-block { padding: 16px; border-top: 4px solid var(--orange); background: #fcfaf8; }
 .help-block p { margin-bottom: 0; }
+.focus-card-grid { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.focus-card-grid-three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.focus-card { padding: 18px; border-top: 4px solid var(--orange); background: #f8f8f8; }
+.focus-card h2, .focus-card h3 { margin-bottom: 8px; color: var(--orange-dark); }
+.focus-card p { margin-bottom: 10px; }
 
 @media (max-width: 1120px) {
   .tenant-bar { grid-template-columns: auto auto 1fr; }
   .tenant-actions { display: none; }
   .content-layout { grid-template-columns: 1fr; }
   .right-panel { min-height: 0; }
-  .cards, .three-col, .four-col, .template-grid, .feature-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .gateway-meeting-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .escalation-flow, .sme-own-grid, .sme-example-grid, .help-block-grid, .decision-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cards, .three-col, .four-col, .template-grid, .feature-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .gateway-meeting-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .pm-role-grid-five, .escalation-flow, .escalation-flow-three, .sme-own-grid, .sme-example-grid, .help-block-grid, .decision-row, .focus-card-grid, .focus-card-grid-three { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stage-track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .lifecycle-files, .sponsor-grid, .charter-grid, .pm-files, .team-files, .pmo-files, .sponsor-flow, .journey-strip-five { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .journey-strip-three { grid-template-columns: 1fr; }
@@ -373,7 +383,7 @@ article p:last-child { margin-bottom: 0; }
   .left-nav { border-right: 0; border-bottom: 1px solid var(--line); }
   .page-hero { min-height: 180px; padding: 40px 22px 24px; }
   .main-content { padding: 26px 22px 40px; }
-  .cards, .two-col, .three-col, .four-col, .template-grid, .journey, .feature-grid, .right-panel-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .stage-track, .gateway-meeting-grid, .lifecycle-files, .sponsor-grid, .charter-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .escalation-flow, .pm-files, .sme-own-grid, .sme-example-grid, .team-files, .pmo-files, .help-block-grid, .decision-row, .sponsor-flow, .journey-strip-three, .journey-strip-five { grid-template-columns: 1fr; }
+  .cards, .two-col, .three-col, .four-col, .template-grid, .journey, .feature-grid, .right-panel-grid, .file-card-row, .step-strip, .doc-link-row, .key-info-grid, .stage-track, .gateway-meeting-grid, .lifecycle-files, .sponsor-grid, .charter-grid, .benefits-points, .pm-action-grid, .pm-role-grid, .pm-role-grid-five, .escalation-flow, .escalation-flow-three, .pm-files, .sme-own-grid, .sme-example-grid, .team-files, .pmo-files, .help-block-grid, .decision-row, .sponsor-flow, .journey-strip-three, .journey-strip-five, .focus-card-grid, .focus-card-grid-three { grid-template-columns: 1fr; }
   .journey span::after { content: ""; }
   .right-panel-grid.is-five .panel-link:last-child { grid-column: auto; min-height: 96px; }
   .journey-strip::before { display: none; }
